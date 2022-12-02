@@ -1,4 +1,4 @@
-name: Commisery
+name: Commisery (shared)
 on: workflow_call
 
 concurrency:
