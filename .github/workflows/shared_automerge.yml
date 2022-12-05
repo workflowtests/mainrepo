@@ -1,4 +1,4 @@
-name: shared_automerge
+name: Automerge (shared)
 on: workflow_call
 
 jobs:
