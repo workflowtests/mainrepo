@@ -1,5 +1,5 @@
-name: automerge
-on: pull_request_target
+name: shared_automerge
+on: workflow_call
 
 jobs:
   auto-merge:
