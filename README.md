@@ -7,3 +7,5 @@ Another line.
 Yet another line.
 
 Editing in command line.
+
+This is the fron libne of the repository.
