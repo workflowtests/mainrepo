@@ -6,4 +6,8 @@ Another line.
 
 Yet another line.
 
-Editing in command line.
+Editing on the command line.
+
+Fixing different issues.
+Practicing.
+
