@@ -13,3 +13,5 @@ Practicing.
 
 One last thing forgotten, so ammending.
 
+Incorrect instructions about the project should be removed.
+
