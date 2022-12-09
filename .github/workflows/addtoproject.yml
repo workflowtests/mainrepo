@@ -8,6 +8,10 @@ on:
     types:
       - opened
 
+permissions:
+  issues: write
+  pull-requests: write
+
 jobs:
   add-to-project:
 # Use this line for the same repository 
