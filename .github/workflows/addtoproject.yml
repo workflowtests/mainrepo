@@ -1,0 +1,16 @@
+name: Add to project 
+
+on:
+  issues:
+    types:
+      - opened
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  add-to-project:
+# Use this line for the same repository 
+    uses: workflowtests/mainrepo/.github/workflows/shared_addtoproject.yml@main
+# Use this line for to reference the workflow in the other repository
+#   uses: ./.github/workflows/shared_commisery.yml@main
