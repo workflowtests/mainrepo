@@ -1,4 +1,4 @@
-name: Add issues and PRs to a project
+name: Add to project (shared)
 on: workflow_call
 
 jobs:
