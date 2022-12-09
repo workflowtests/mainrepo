@@ -5,6 +5,7 @@ on:
 jobs:
   auto-merge:
 # Use this line for the same repository 
-    uses: workflowtests/mainrepo/.github/workflows/shared_automerge.yml@main
+    uses: ${{ github.repository }}/.github/workflows/shared_automerge.yml@main
+#   uses: workflowtests/mainrepo/.github/workflows/shared_automerge.yml@main
 # Use this line for to reference the workflow in the other repository
 #   uses: ./.github/workflows/shared_automerge.yml@main
