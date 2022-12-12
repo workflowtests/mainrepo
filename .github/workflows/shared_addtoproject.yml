@@ -1,5 +1,9 @@
 name: Add to project (shared)
-on: workflow_call
+on: 
+  workflow_call:
+    secrets:
+      token:
+        required: true
 
 jobs:
   add-to-project:
@@ -9,4 +13,4 @@ jobs:
       - uses: actions/add-to-project@v0.4.0
         with:
           project-url: https://github.com/orgs/workflowtests/projects/1
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.token }}
