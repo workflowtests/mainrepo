@@ -16,5 +16,7 @@ jobs:
   add-to-project:
 # Use this line for the same repository 
     uses: workflowtests/mainrepo/.github/workflows/shared_addtoproject.yml@main
+    secrets: 
+      token: $ { secrets.GITHUB_TOKEN }} 
 # Use this line for to reference the workflow in the other repository
 #   uses: ./.github/workflows/shared_commisery.yml@main
