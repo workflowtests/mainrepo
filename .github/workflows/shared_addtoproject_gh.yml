@@ -3,10 +3,10 @@ on: workflow_call
 
 jobs:
   add-to-project-gh:
-    name: Add an issue to rpoject
     runs-on: ubuntu-latest
     steps:
-      run: gh issue edit $ISSUE_URL --add-project 'test project'
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
-        ISSUE_URL: ${{ github.event.pull_request.html_url }}
+      - name: Add an issue to project
+        run: gh issue edit $ISSUE_URL --add-project 'test project'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          ISSUE_URL: ${{ github.event.pull_request.html_url }}
