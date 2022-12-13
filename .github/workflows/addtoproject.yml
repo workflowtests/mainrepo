@@ -12,11 +12,24 @@ permissions:
   issues: write
 #  pull-requests: write
 
-jobs:
-  add-to-project:
+#jobs:
+#  add-to-project:
 # Use this line for the same repository
-    uses: workflowtests/mainrepo/.github/workflows/shared_addtoproject.yml@main
-    secrets:
-      passed-token: ${{ secrets.GITHUB_TOKEN }} 
+#    uses: workflowtests/mainrepo/.github/workflows/shared_addtoproject.yml@main
+#    secrets:
+#      passed-token: ${{ secrets.GITHUB_TOKEN }} 
 # Use this line for to reference the workflow in the other repository
 #   uses: ./.github/workflows/shared_commisery.yml@main
+
+
+jobs:
+  add-to-project:
+    name: Add issue to project
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/add-to-project@RELEASE_VERSION
+        with:
+          # You can target a repository in a different organization
+          # to the issue
+          project-url: https://github.com/orgs/workflowtests/projects/1
+          github-token: ${{ github.token }}
