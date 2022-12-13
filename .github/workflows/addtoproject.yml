@@ -32,4 +32,4 @@ jobs:
           # You can target a repository in a different organization
           # to the issue
           project-url: https://github.com/orgs/workflowtests/projects/1
-          github-token: ${{ github.token }}
+          github-token: ${{ secrets.ADD_TO_PROJECT }}
