@@ -15,8 +15,8 @@ permissions:
 jobs:
   add-to-project:
     uses: workflowtests/mainrepo/.github/workflows/shared_addtoproject.yml@main
-#    secrets:
-#      passed-token: ${{ secrets.GITHUB_TOKEN }} 
+    secrets:
+      passed-token: ${{ secrets.ADD_TO_PROJECT }} 
 # Use this line for to reference the workflow in the other repository
 #   uses: ./.github/workflows/shared_commisery.yml@main
 
