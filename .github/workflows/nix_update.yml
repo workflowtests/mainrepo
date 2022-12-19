@@ -8,3 +8,4 @@ on:
 jobs:
   nix-update:
     uses: workflowtests/mainrepo/.github/workflows/shared_nix_update.yml@main
+    
